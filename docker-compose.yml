@@ -1,0 +1,9 @@
+version: "3"
+services:
+  wiremock:
+    image: "wiremock/wiremock:latest"
+    container_name: my_wiremock
+    volumes:
+      - ./wiremock/wwe-server:/home/wiremock
+    ports:
+      - "8081:8080"
