@@ -10,12 +10,12 @@ import java.util.List;
         value = "photo-consumer-local",
         url = "http://localhost:8081/v1")
 public interface PhotoConsumerFeignLocal {
-    @GetMapping(value = "/photos")
+    @GetMapping(value = "/local-photo")
     List<Photo> getPhotosLocal();
 
     @GetMapping(value = "/local-photo")
     Photo getOnePhotoTest();
-    @GetMapping(value = "/photos/{id}")
+    @GetMapping(value = "/local-photo/{id}")
     Photo getPhotosByIdLocal(@PathVariable("id") Long id);
 
 }
