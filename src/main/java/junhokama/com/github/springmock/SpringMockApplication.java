@@ -20,8 +20,6 @@ public class SpringMockApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println(
-			this.photoConsumerFeign.getPhotosById(3L)
-		);
+		System.out.println("Inicializando o servidor");
 	}
 }
